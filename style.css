@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    /* color variable */
+    --dark-color: #2B2D42;
+    --red-color: #D80032;
+    --cyn-color: #41EAD4;
+    --light-color: #FEFEFE;
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    width: 1153px;
+    height: auto;
+    margin: auto;
+    padding:0px 100px;
+}
+
+.desktop-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: calc(1153px - 200px);
+    top: 28px;
+    background: #FEFEFE;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+
+}
+.desktop-navbar .logo img{
+    padding-left: 28px;
+    height: 38px;
+    width: 86px;
+}
+.desktop-navbar .menu-items{
+    display: flex;
+}
+.desktop-navbar .menu-items li{
+    list-style: none;
+    margin:0px 20px;
+}
+.desktop-navbar .menu-items li a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+.desktop-navbar .menu-items li:last-child{
+    margin-right: 0px;
+}
+.desktop-navbar .menu-items li .btn{
+    background-color: var(--red-color);
+    color: var(--light-color);
+    border-radius: 24px;
+    padding:14px;
+    position: relative;
+}
+.desktop-navbar .menu-items li  .active::after{
+    content: '';
+    position: absolute;
+    width: 43px;
+    height: 3px;
+    background-color: var(--red-color);
+    margin-left: -45px;
+    bottom: 0;
+}
+
+/* hero section  */
+
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+}
+
+.hero-section .left-side{
+    flex: 1;
+}
+
+.hero-bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.polygon1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 300px;
+    top: 108px;
+}
+.polygon2{
+    position: absolute;
+    width: 64.27px;
+    height: 64.27px;
+    left: 489.79px;
+    top: 142px;
+}
+.polygon3{
+    position: absolute;
+    width: 147px;
+    height: 147px;
+    left: 600px;
+    top: 294px;
+}
+
+.hero-section p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.hero-section h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+}
+.hero-section h1 .gt{
+    color: var(--red-color);
+}
+.hero-section .btn-section{
+    margin-top: 25px;
+}
+.hero-section .btn{
+    margin-right: 20px;
+    text-decoration: none;
+    padding:14px;
+    border-radius: 24px;
+    background-color: var(--red-color);
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+.hero-section .cym{
+    background-color: var(--cyn-color);
+    color: var(--dark-color);
+}
+
+
+.clint-section{
+    margin-top:100px;
+    padding:40px 53px;
+    background: var(--light-color);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+}
+.clint-section h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 32px;
+    position: relative;
+}
+.clint-section h1::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    margin-left: -30px;
+    height: 3px;
+    width: 32px;
+    background-color: var(--red-color);
+}
+.clint-section .clint-logo{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* about section  */
+
+.about-section{
+    margin-top: 100px;
+}
+.about-section h1{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 32px;
+    position: relative;
+}
+.about-section h1::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    margin-left: -30px;
+    height: 3px;
+    width: 32px;
+    background-color: var(--red-color);
+}
+.about-wrap{
+    margin-top:43px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.about-wrap .left-side{
+    padding-right: 100px;
+}
+.about-wrap p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
